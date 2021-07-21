@@ -1,0 +1,64 @@
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+/*
+ * Complete the vowelsAndConsonants function.
+ * Print your output using 'console.log()'.
+ */
+function vowelsAndConsonants(s) {
+
+    let a = s;
+    
+    let i = 0
+    while(i < a.length){
+        
+        if(a[i]=='a')
+            console.log("a");
+        else if(a[i] == 'e')
+            console.log("e");
+        else if(a[i] == 'i')
+            console.log("i");
+        else if(a[i] == 'o')
+            console.log("o");        
+        else if(a[i] == 'u')
+            console.log("u");
+        
+        i++;
+    }
+    let j = 0;
+    while(j < a.length){
+        if(a[j] != 'a' && a[j] != 'e' && a[j] != 'i' && a[j] != 'o' && a[j] != 'u'){
+            console.log(a[j]);
+        }
+        j++;
+    }
+    
+}
+
+
+function main() {
+    const s = readLine();
+    
+    vowelsAndConsonants(s);
+}

@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class Java_End_of_file {
 
     public static void main(String[] args) {
         

@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 import java.lang.*;
 
-class Solution{
+class Java_Loops_II{
     public static void main(String []argh){
         Scanner in = new Scanner(System.in);
         int t=in.nextInt();

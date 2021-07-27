@@ -1,6 +1,7 @@
 import java.util.*;
 import java.security.*;
-public class Solution {
+
+public class Java_Int_to_String {
  public static void main(String[] args) {
 
   DoNotTerminate.forbidExit();
@@ -12,7 +13,7 @@ public class Solution {
    
     String s = String.valueOf(n);
    
-   if (n == Integer.parseInt(s)) {
+    if (n == Integer.parseInt(s)) {
     System.out.println("Good job");
    } else {
     System.out.println("Wrong answer.");
